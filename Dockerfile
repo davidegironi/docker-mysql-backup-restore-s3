@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="Davide Gironi <davide.gironi@gmail.com>"
+LABEL maintainer="Davide Gironi"
 
 RUN apk update
 RUN apk add --no-cache \
