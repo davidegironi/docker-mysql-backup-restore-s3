@@ -6,12 +6,12 @@ About
 ## Basic Backup usage
 
 ```sh
-$ docker run -e ACTION=backup -e S3_ACCESSKEYID=awskey -e S3_SECRETACCESSKEY=awssecret -e S3_BUCKET=s3bucket -e S3_PREFIX=backup -e S3_REGION=awsregion -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_HOST=localhost -e S3_FILENAME=latestbackup -e MULTI_FILES=yes -davidegironi/mysql-backup-restore-s3
+$ docker run -e ACTION=backup -e S3_ACCESSKEYID=awskey -e S3_SECRETACCESSKEY=awssecret -e S3_BUCKET=s3bucket -e S3_PREFIX=backup -e S3_REGION=awsregion -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_HOST=localhost -e S3_FILENAME=latestbackup -e MULTI_FILES=yes -davidegironi/docker-mysql-backup-restore-s3
 ```
 ## Basic Restore usage
 
 ```sh
-$ docker run -e ACTION=restore -e MYSQLDUMP_DATABASE=test -e MYSQLDUMP_TODATABASE=newtest -e S3_ACCESSKEYID=awskey -e S3_SECRETACCESSKEY=awssecret -e S3_BUCKET=s3bucket -e S3_REGION=awsregion -e S3_PREFIX=backup -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_HOST=localhost -e S3_FILENAME=latestbackup -e MULTI_FILES=yes -davidegironi/mysql-backup-restore-s3
+$ docker run -e ACTION=restore -e MYSQLDUMP_DATABASE=test -e MYSQLDUMP_TODATABASE=newtest -e S3_ACCESSKEYID=awskey -e S3_SECRETACCESSKEY=awssecret -e S3_BUCKET=s3bucket -e S3_REGION=awsregion -e S3_PREFIX=backup -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_HOST=localhost -e S3_FILENAME=latestbackup -e MULTI_FILES=yes -davidegironi/docker-mysql-backup-restore-s3
 ```
 
 ## Environment variables
